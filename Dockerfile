@@ -11,7 +11,7 @@ ENV GALAXY_DOCKER_ENABLED True
 ENV GALAXY_DOCKER_VOLUMES_FROM ''
 
 #RUN add-tool-shed --url 'http://testtoolshed.g2.bx.psu.edu/' --name 'Test Tool Shed'
-#RUN add-tool-shed --url 'http://toolshed.g2.bx.psu.edu/' --name 'Main Tool Shed'
+RUN add-tool-shed --url 'http://toolshed.g2.bx.psu.edu/' --name 'Main Tool Shed'
 
 # Install myTools
 ADD mytools.yaml $GALAXY_ROOT/my-tools.yml
